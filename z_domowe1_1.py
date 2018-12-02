@@ -2,7 +2,7 @@ def bmi(masa,wzrost):
     bmi = round(masa/((wzrost/100)**2),2)
     return bmi
 
-print(bmi(50,170))
+print(bmi(75,176))
 
 
 def komentarz(bmi):
@@ -18,5 +18,6 @@ def komentarz(bmi):
 
     return komentarz
 
+print(komentarz(20))
 print(komentarz(19))
-
+print(komentarz(25))

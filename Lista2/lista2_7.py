@@ -1,4 +1,10 @@
+class NotListError(Exception):
+    pass
+
 def zbuduj_zdania(lista):
+
+    if not isinstance(lista, list):
+        raise NotListError
 
     wynik = ""
     for zdanie in lista:
@@ -16,5 +22,7 @@ def zbuduj_zdania(lista):
 lista = [ ["łódź", "się", "obudziła"],
               ["ogary", "poszły", "w", "las"] ]
 
-print(zbuduj_zdania(lista))
+#print(zbuduj_zdania(lista))
+
+print(zbuduj_zdania("dwa"))
 

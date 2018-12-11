@@ -1,4 +1,12 @@
+import os
+
+class NotFileError(Exception):
+    pass
+
 def statystyka(nazwa_pliku):
+
+    if not isinstance(nazwa_pliku, str):
+        raise NotFileError
 
     znaki_konca_zdania = ['.', '!', '?']
     liczba_zdan = 0
@@ -16,4 +24,5 @@ def statystyka(nazwa_pliku):
     print(F"Liczba zdań to {liczba_zdan}")
 
 
-statystyka("D:\Pulpit/test.txt")
+#statystyka("D:\Pulpit/test.txt")
+statystyka(2)

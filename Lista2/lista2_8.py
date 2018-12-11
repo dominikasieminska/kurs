@@ -13,6 +13,7 @@ def uprosc_zdanie(tekst, dl_slowa, liczba_slow):
     while liczba_slow < nowa_liczba_slow:
         index = random.randint(0, len(nowa_lista_slow)-1)
         del nowa_lista_slow[index]
+        print(index, nowa_lista_slow, len(nowa_lista_slow))
         nowa_liczba_slow = len(nowa_lista_slow)
 
     nowy_tekst = " ".join(nowa_lista_slow)
@@ -20,10 +21,7 @@ def uprosc_zdanie(tekst, dl_slowa, liczba_slow):
     return nowy_tekst
 
 
-
-tekst = "Podział peryklinalny inicjałów wrzecionowatych \
-        kambium charakteryzuje się ścianą podziałową inicjowaną \
-        w płaszczyźnie maksymalnej."
-
-
-print(uprosc_zdanie(tekst, 10, 5))
+tekst = "Podział peryklinalny inicjałów wrzecionowatych kambium charakteryzuje się ścianą podziałową inicjowaną w płaszczyźnie maksymalnej."
+print(tekst.split(" "))
+nowe = uprosc_zdanie(tekst, 10, 5)
+print(nowe)

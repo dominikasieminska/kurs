@@ -1,6 +1,6 @@
 def porzadek_imion(imiona):
 
-    imiona_posortowane = imiona.sort()
+    imiona_posortowane = sorted(imiona)
     return imiona_posortowane
 
 

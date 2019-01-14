@@ -19,10 +19,9 @@ def zbuduj_zdania(lista):
     return wynik
 
 
-lista = [ ["łódź", "się", "obudziła"],
-              ["ogary", "poszły", "w", "las"] ]
+#lista = [ ["łódź", "się", "obudziła"],["ogary", "poszły", "w", "las"] ]
 
 #print(zbuduj_zdania(lista))
 
-print(zbuduj_zdania("dwa"))
+#print(zbuduj_zdania("dwa"))
 

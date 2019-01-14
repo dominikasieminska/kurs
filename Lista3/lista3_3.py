@@ -1,5 +1,3 @@
-import os
-
 class NotFileError(Exception):
     pass
 
@@ -24,5 +22,5 @@ def statystyka(nazwa_pliku):
     print(F"Liczba zdań to {liczba_zdan}")
 
 
-#statystyka("D:\Pulpit/test.txt")
+statystyka("D:\Pulpit/test.txt")
 statystyka(2)

@@ -14,4 +14,4 @@ def klasyfikator(napis):
 
 
 #klasyfikator("Lorem ipsum dolor sit amet, consecteur adipiscing elit.")
-klasyfikator(2)
+#klasyfikator(2)
